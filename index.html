@@ -86,7 +86,7 @@
       display: flex; flex-direction: column; gap: 8px;
       margin-bottom: 18px; padding: 16px; background: #222; border-radius: 8px;
     }
-    .result-label { font-size: 14px; color: #aaa; font-weight: 600; }
+    .result-label { font-size: 15px; color: #f2f2f2; font-weight: 600; }
     .result-value { font-size: 24px; font-weight: bold; color: #667eea; }
     .error {
       display: none; padding: 15px; background: #400; border: 2px solid #600;
@@ -281,7 +281,7 @@
           <div class="section-title">Dodatni Troškovi</div>
           <div class="form-group">
             <div class="input-wrapper">
-              <label for="b18">Kamata na kredit</label>
+              <label for="b18">Ukupna Kamata za kredit</label>
               <div class="input-with-unit">
                 <input type="number" id="b18" value="0" step="100" min="0">
                 <div class="unit">€</div>
@@ -297,14 +297,14 @@
           </div>
           <div class="form-group">
             <div class="input-wrapper">
-              <label for="b20">Veliki servis</label>
+              <label for="b20">Cena jednog Velikog servisa</label>
               <div class="input-with-unit">
                 <input type="number" id="b20" value="600" step="50" min="0">
                 <div class="unit">€</div>
               </div>
             </div>
             <div class="input-wrapper">
-              <label for="b21">Vrednost auta nakon perioda</label>
+              <label for="b21">Vrednost auta nakon unetog perioda vožnje</label>
               <div class="input-with-unit">
                 <input type="number" id="b21" value="16500" step="500" min="0">
                 <div class="unit">€</div>
@@ -377,7 +377,7 @@
       <div class="results" id="results">
         <h3>Rezultati Izračunavanja</h3>
         <div class="result-item">
-          <div class="result-label">Ukupni troškovi nakon perioda</div>
+          <div class="result-label">Ukupni troškovi nakon unetog perioda vožnje</div>
           <div class="result-value"><span id="b23">0</span> €</div>
         </div>
         <div class="result-item">
@@ -516,3 +516,4 @@
   </script>
 </body>
 </html>
+
